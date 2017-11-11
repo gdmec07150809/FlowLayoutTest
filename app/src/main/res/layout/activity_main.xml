@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#f2f2f2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_click"
+            android:id="@+id/found_back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@android:color/background_light"
+            android:id="@+id/collection_activity_title_text" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/light_button_444_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入关键词"
+            android:textColorHint="#bab7b8"
+            android:padding="8dp"
+            android:id="@+id/found_edt" />
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/found"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/found_history_ryt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最近搜索"
+            android:textColor="#404040"
+            android:background="@android:color/background_light"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"/>
+        <com.example.administrator.flowlayouttest.FlowLayout
+            android:id="@+id/found_activity_fyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.administrator.flowlayouttest.FlowLayout>
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+</LinearLayout>
